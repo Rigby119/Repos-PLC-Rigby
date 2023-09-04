@@ -176,6 +176,9 @@ def regresar():
 def salir():
     main.destroy()
 
+def sayHello():
+    print("Hello")
+
 #Colocar fondo
 bgl_main=Label(main, image=bg, **label_f).place(x=-1, y=-1)
 bgl_w1=Label(w1, image=bg, **label_f).place(x=-1, y=-1)
