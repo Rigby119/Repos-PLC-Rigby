@@ -31,6 +31,7 @@ for i,  row in enumerate(data):
 
 #Creamos una matriz para nuevos usuarios
 new_users=[]
+new_scores=[]
 
 '''FUNCIÓN PARA QUE SELECCIONEMOS LAS PREGUNTAS QUE QUEREMOS QUE NUESTRO USUARIO RESPONDA'''
 def seleccion_preguntas():
@@ -236,7 +237,7 @@ def avanzar_preguntas():
 
 
 def terminar_preguntas():
-    global matricula, score, respuestas, correct
+    global matricula, score, respuestas, correct, new_scores
     prompt=e1_w4.get()
     e1_w4.delete(0, END)
     if prompt == respuestas[indice_pregunta]:
@@ -253,7 +254,7 @@ def terminar_preguntas():
         score=str(resultado)
     index_user=users[0].index(matricula)
     users[3][index_user]=score
-    data[index_user+2][3].value=score
+    new_scores.append(index_user)
     l3_w5.configure(text=f"Tú calificación es\nd: {score}/100")
     w4.iconify()
     w5.deiconify()
@@ -277,6 +278,8 @@ def salir():
     if new_users!=[]:
         for i in new_users:
             data.append(i)
+    for i in new_scores:
+        data[i+2][3].value=users[3][i]
     data_file.save("datos.xlsx")
     main.destroy()
 
