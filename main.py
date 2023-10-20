@@ -1,4 +1,5 @@
 #IMPORTAMOS LAS LIBRERIAS DE INTERÉS
+#To install openpyxl type 'pip install openpyxl' or 'pip3 install openpyxl' in your terminal
 from openpyxl import load_workbook
 from tkinter import *
 import random
