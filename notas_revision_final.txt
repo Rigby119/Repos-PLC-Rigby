@@ -1,0 +1,24 @@
+NOTAS:
+
+Algunos de los aspectos que considero pertinente reevaluar son:
+    - Uso de funciones creadas por mi mismo:
+        En un comentario usted dijo que debia implementar más funciones de este tipo, ya lo hice
+    - Uso de operadores y otras funciones basicas:
+        Me comentó que hice un buen uso pero escaso de los operadores, ya agregué más de estos para hacer un conteo de preguntas e indices
+        Asímismo, me comentó que había algunas funciones basicas que estaba omitiendo, ahora mi programa cuenta con:
+            1.- operadores (aritméticos + - * / ...)
+            2.- variables
+            3.- funciones
+            4.- condicionales
+            5.- operadores boleanos (and or not < > ==)
+            6.- anidacion condiciones
+            7.- ciclos while
+            8.- ciclos for
+            9.- listas
+            10.- listas anidadas o matrices
+            11.- manipulación de cadenas/Strings
+            12.- archivos
+        Estos son componentes que tome de la hoja de calculo de la evaluación
+    - Por ultimo pero no menos importante, cabe destacar que ya no abren todas las ventanas jaja
+
+Como extra me gustaría destacar que logré que mi programa actualizara mi archivo de excel con nuevos usuarios y sus datos
